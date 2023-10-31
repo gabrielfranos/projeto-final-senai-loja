@@ -1,0 +1,68 @@
+main{
+    height: calc(100vh - 12rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-texto);
+    
+}
+
+legend{
+    margin: 1em 0;
+    font-weight: 700;
+}
+
+fieldset{
+    border: none;
+}
+
+input:focus, input:hover{
+    outline: none;
+    background-color: #daccb9;
+}
+
+span{
+    float: right;
+}
+
+input{
+    background-color: var(--cor-fundo);
+    border: none;
+    padding: 1em;
+    border-radius: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+form {
+    background-color: var(--cor-fundo-cards);
+    border: none;
+    display: flex;
+    padding: 2rem;
+    border-radius: 1rem;
+    gap: 2rem;
+}
+
+#cidade-estado{
+    display:flex;
+    gap: .5rem;
+
+}
+#div-cidade{
+    width: 75%;
+}
+
+#div-estado{
+    width: 25%;
+}
+
+button{
+    background-color: inherit;
+    border: none;
+    padding: 1em;
+}
+
+#cadastrar{
+    align-self: flex-end;
+}

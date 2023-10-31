@@ -1,0 +1,44 @@
+
+/* main */
+
+#sobre{
+    margin: 2rem auto;
+    width: 80%;
+    background-color: var(--cor-fundo-cards);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+#jogos{
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.card-jogo{
+    margin: 0 auto;
+    width: 80%;
+    background-color: var(--cor-fundo-cards);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,.5);
+}
+
+.card-jogo h3{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.card-jogo p{
+    margin-top: .5rem;
+}
+
+.card-jogo img{
+    height: 75%;
+    width: 100%;
+}
