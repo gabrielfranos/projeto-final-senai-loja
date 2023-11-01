@@ -30,13 +30,13 @@
             </button>
             <button>Cadastro</button>
         </div>
-        <form>
+        <form autocomplete="on">
             <div>
                 <fieldset>
                     <legend>Dados Pessoais</legend>
                     <div>
                         <label for="nome">Nome Completo</label>
-                        <input type="text" name="nome" id="nome" required>
+                        <input type="text" name="nome" id="nome" required autocomplete="name">
                     </div>
                     <div>
                         <label for="cpf">CPF</label>
@@ -44,22 +44,22 @@
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email" required autocomplete="email">
                     </div>
                     <div>
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" required>
+                        <input type="password" name="senha" id="senha" required autocomplete="new-password">
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Endereço</legend>
                     <div>
                         <label for="cep">CEP</label>
-                        <input type="number" name="cep" id="cep" required>
+                        <input type="number" name="cep" id="cep" required >
                     </div>
                     <div>
                         <label for="endereco">Endereço</label>
-                        <input type="text" name="endereco" id="endereco" required>
+                        <input type="text" name="endereco" id="endereco" required autocomplete="street-address">
                     </div>
                     <div>
                         <label for="complemento">Complemento</label>
