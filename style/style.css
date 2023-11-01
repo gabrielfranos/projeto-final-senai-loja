@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
+/* cores utilizadas */
 :root {
     --cor-acento:#EC6211;
     --cor-fundo: #F3E4CE;
@@ -7,7 +8,7 @@
     --cor-texto: #FFFFFF;
     --cor-fundo-cards: #38607A;
 }
-
+/* reseta css + define familia de fontes */
 * {
     margin: 0;
     padding: 0;
@@ -26,10 +27,10 @@ ul {
     list-style: none;
 }
 
+/* define tamanho e cores de cabeçalhos */
 h1,
 h2,
 h3 {
-    color: var(--cor-primaria);
     font-weight: 700;
     color: var(--cor-texto);
 }
@@ -48,7 +49,7 @@ header{
     gap: 1rem;
     align-items: center;
 }
-
+/* define tamanho da imagem da logo */
 .logo img {
     width: 100%;
     border-radius: 50%;
@@ -58,7 +59,7 @@ header{
     width: 6rem;
     aspect-ratio: 1/1;
 }
-
+/* define a barra de navegação */
 nav{
     margin: 0 auto;
     width: 60%;
@@ -75,53 +76,8 @@ nav ul{
 }
 
 nav ul a{
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: var(--cor-texto);
-}
-
-/* main */
-
-#sobre{
-    margin: 2rem auto;
-    width: 80%;
-    background-color: var(--cor-fundo-cards);
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 2rem;
-}
-
-#jogos{
-    margin: 0 auto;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-}
-
-.card-jogo{
-    margin: 0 auto;
-    width: 80%;
-    background-color: var(--cor-fundo-cards);
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 1rem rgba(0,0,0,.5);
-}
-
-.card-jogo h3{
-    text-transform: uppercase;
-    font-size: 1.5rem;
-}
-
-.card-jogo p{
-    margin-top: .5rem;
-}
-
-.card-jogo img{
-    height: 75%;
-    width: 100%;
 }
 
 /* footer */
@@ -134,3 +90,4 @@ footer{
     padding: 1rem;
     color: var(--cor-texto);
 }
+
