@@ -22,8 +22,14 @@ input:focus, input:hover{
     background-color: #daccb9;
 }
 
-span{
+span > a{
     float: right;
+    color: var(--cor-texto);
+    margin-bottom: .25rem;
+}
+
+span a:hover{
+    color: var(--cor-acento);
 }
 
 input{
@@ -44,25 +50,35 @@ form {
     gap: 2rem;
 }
 
-#cidade-estado{
-    display:flex;
-    gap: .5rem;
-
-}
-#div-cidade{
-    width: 75%;
-}
-
-#div-estado{
-    width: 25%;
-}
-
-button{
+button {
     background-color: inherit;
     border: none;
     padding: 1em;
+    font-weight: 700;
+    color: black;
+    font-size: 1.15rem;
+}
+
+button a{
+    color: var(--cor-acento);
+    font-size: 1.15rem;
+}
+
+button a:hover{
+    color: var(--cor-texto);
 }
 
 #cadastrar{
     align-self: flex-end;
+}
+
+#input-login{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cor-acento);
+}
+
+#input-login:hover{
+    background-color: var(--cor-fundo);
+    cursor: pointer;
 }

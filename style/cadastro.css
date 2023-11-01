@@ -1,5 +1,5 @@
 main{
-    height: calc(100vh - 12rem);
+    min-height: calc(100vh - 12rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,6 +33,8 @@ input{
 }
 
 form > div{
+    margin: 0 auto;
+    max-width: 80%;
     background-color: var(--cor-fundo-cards);
     border: none;
     display: flex;
@@ -54,12 +56,53 @@ form > div{
     width: 25%;
 }
 
-button{
+button {
     background-color: inherit;
     border: none;
     padding: 1em;
+    font-weight: 700;
+    color: black;
+    font-size: 1.15rem;
+}
+
+button a{
+    color: var(--cor-acento);
+    font-size: 1.15rem;
+
+}
+
+button a:hover{
+    color: var(--cor-texto);
 }
 
 #cadastrar{
+    font-size: 1.05rem;
+    font-weight: 700;
     align-self: flex-end;
+    color: var(--cor-acento);
+}
+
+#cadastrar:hover{
+ background-color: var(--cor-fundo);
+ cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    form > div{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #cidade-estado{
+        flex-direction: column;
+    }
+    #div-cidade{
+        width: 100%;
+    }
+    #div-estado{
+        width: 100%;
+    }
+    #cadastrar{
+        align-self: center;
+    }
+    
 }
